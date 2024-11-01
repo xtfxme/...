@@ -17,6 +17,7 @@
 [branch "ellipsis"]
 	remote = origin
 	merge = refs/heads/ellipsis
+	vscode-merge-base = origin/ellipsis
 [receive]
 	denyCurrentBranch = ignore
 [http]
