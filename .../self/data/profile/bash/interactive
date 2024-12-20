@@ -27,18 +27,11 @@ export VIRTUAL_ENV_DISABLE_PROMPT=true
 #shopt -s nullglob
 shopt -s extglob
 
-# ABSEC exports.
-export ABSEC= SOURCE= VENV=
-export ABSEC=$(
+export DEVEL=$(
   shopt -s nullglob
-  printf '%s\n' ~/abnormalsecurit[y] /abnormalsecurit[y] |
+  printf '%s\n' ~/deve[l] /deve[l] |
     head -n1
 )
-SOURCE=$ABSEC/source
-VENV=$SOURCE/.venv
-[[ -e $SOURCE/tools/bash/prelude.sh ]] &&
-  . "$SOURCE"/tools/bash/prelude.sh ||
-  true
 
 : ${DEVELOPER_DIR:=$(xcode-select --print-path 2> /dev/null)}
 for x in \
